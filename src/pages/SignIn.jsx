@@ -2,9 +2,10 @@ import {
   signInWithGoogle,
   getAllUsers,
   getUserById,
-} from "./services/auth.services";
+} from "../services/auth.services";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
+
 function SignIn() {
   const [userForm, setUserForm] = useState({
     email: "",
