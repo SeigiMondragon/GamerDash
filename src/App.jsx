@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
-import SignIn from "./SignIn.jsx";
-import User from "./User.jsx";
+import SignIn from "./pages/SignIn.jsx";
+import User from "./pages/User.jsx";
 function App() {
   return (
     <>
