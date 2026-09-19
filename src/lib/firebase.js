@@ -13,17 +13,15 @@ import {
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyBWq9nGlYV8MyYtCp7VlEJTOPZNDvHSXvE",
-  authDomain: "fir-crashcourse-67e22.firebaseapp.com",
-  databaseURL: "https://fir-crashcourse-67e22-default-rtdb.firebaseio.com",
-  projectId: "fir-crashcourse-67e22",
-  storageBucket: "fir-crashcourse-67e22.firebasestorage.app",
-  messagingSenderId: "914438860714",
-  appId: "1:914438860714:web:42f6777cb665d7c084c5d3",
-  measurementId: "G-KX2T1FJBDS",
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  databaseURL: import.meta.env.VITE_FIREBASE_DATABASE_URL,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID,
 };
 
 // Initialize Firebase

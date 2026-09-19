@@ -1,10 +1,11 @@
 import {
+  createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
-  signInWithPopup,
   signInWithRedirect,
+  signOut,
 } from "firebase/auth";
 import { auth, provider, db } from "../lib/firebase";
-import { ref, push, onValue, remove } from "firebase/database";
+import { ref, push, onValue, remove, set } from "firebase/database";
 
 export const signInWithGoogle = async () => {
   try {
