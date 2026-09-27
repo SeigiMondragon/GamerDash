@@ -25,6 +25,8 @@ const AuthProvider = ({ children }) => {
     return () => unsubscribe;
   }, []);
 
+  // some comments about the useMemo hook and its usage in this context
+
   const value = useMemo(
     () => ({
       user,
